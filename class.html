@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Class</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="navbar">
+                <img src="img/logo.jpg" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="class.html">CLASS</a></li>
+                        <li><a href="art.html">ART</a></li>
+                        <li><a href="#" id="login-logout" onclick="clickLogin();">LOGIN</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="menu-btns">
+                <button type="button" class="menu-btn active-btn" id="featured">featured</button>
+                <button type="button" class="menu-btn" id="today-special">easy to learn</button>
+                <button type="button" class="menu-btn" id="new-arrival">new class</button>
+            </div>
+
+            <div class="items">
+                <!-- item -->
+                <div class="item featured">
+                    <div class="img">
+                        <img src="/img/music1.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Music: Expert</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 799.999,99</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Featured</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item today-special">
+                    <div class="img">
+                        <img src="/img/art1.jpg">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Art: Beginner</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 35.000</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Easy to learn</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item new-arrival">
+                    <div class="img">
+                        <img src="/img/music1.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Music: Beginner</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 45.000</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>New Class</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item featured">
+                    <div class="img">
+                        <img src="/img/vocal1.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Vocal: Expert</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 1.000.000,00</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Featured</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item featured">
+                    <div class="img">
+                        <img src="/img/vocal1.jpeg">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Vocal: Beginner</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 74.999,99</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Featured</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item featured">
+                    <div class="img">
+                        <img src="/img/art1.jpg">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Art: Expert</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 639.999,99</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Featured</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item featured">
+                    <div class="img">
+                        <img src="img/dance1.webp">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Dance: Expert</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 639.999,99</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Featured</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+
+                <!-- item -->
+                <div class="item featured">
+                    <div class="img">
+                        <img src="img/dance1.webp">
+                    </div>
+                    <div class="content">
+                        <h2 class="name">Class Dance: Beginner</h2>
+                        <div class="line"></div>
+                        <h3 class="price">Rp 50.000,00</h3>
+                        <ul class="rating">
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="fas fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                            <li><i class="far fa-star"></i></li>
+                        </ul>
+                        <p class="category">Categories: <span>Featured</span></p>
+                    </div>
+                </div>
+                <!-- end of item -->
+                <script src="/js/script.js"></script>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+            <h3>MyArt</h3>
+            <p>Art is a diverse range of human activity, and resulting product, that involves creative or 
+                imaginative talent expressive of technical proficiency, beauty, emotional power, or conceptual ideas.</p>
+            <ul class="socials">
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li><a href="https://twitter.com/?lang=en-id" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.twitch.tv/" target="_blank"><i class="fa fa-twitch"></i></a></li>
+            </ul>
+        </div>
+        <div class="foot">
+            <p>Copyright &copy; 2022 BelajarART. designed by <span>B;la</span> </p>
+        </div>
+    </footer>
+</body>
+
+</html>

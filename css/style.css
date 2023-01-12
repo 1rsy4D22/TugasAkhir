@@ -1,0 +1,292 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(57, 56, 56, 0.7),rgba(0,0,0,0.7)),url(/img/pexels-eugene-golovesov-14003122.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    
+}
+
+.navbar {
+    height: 12%;
+    align-items: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.5);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    right: 10;
+    text-decoration: none;
+    color: white;
+}
+.wrapper .sidebar {
+  background: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 225px;
+  height: 100%;
+  padding: 10px 0;
+  transition: all 0.5 ease;
+}
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper .sidebar .profile img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.wrapper .sidebar .profile h3 {
+    color: white;
+    margin: 10px 0 5px;
+}
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    border-bottom: 1px solid black;
+    color: rgb(217, 221, 221);
+    font-size: 16px;
+    position: relative;
+}
+.wrapper .sidebar ul li a .icon {
+    color: aliceblue;
+    width: 30px;
+    display: inline-block;
+}
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    color: green;
+    background: white;
+    border-right: 2px solid rgb(rgb(44, 37, 76));
+}
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+    color: green;
+}
+.wrapper .sidebar ul li a:hover::before,
+.wrapper .sidebar ul li a.active::before {
+    display: block;
+}
+.wrapper .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all  0.5 ease;
+}
+.wrapper .section .top-navbar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+.wrapper .section .top-navbar .treehead a {
+    font-size: 28px;
+    color: #fff;
+}
+.wrapper .section .top-navbar .treehead a:hover {
+    color: rgb(143, 133, 133);
+}
+body.active .wrapper .sidebar {
+    right: -225px;
+}
+body.active .wrapper .section {
+    margin-right: 200px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    height: 88%;
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.col {
+    flex-basis: 50%;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    padding-bottom: 40px;
+}
+
+p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 15px;
+}
+
+button {
+    width: 180px;
+    color: #000;
+    font-size: 12px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    
+}
+button:hover {
+    transform: translateX(10px);
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.4s;
+    font-size: 20px;
+    
+}
+.card1 {
+    background-image: url(/img/classdance.jpg);
+}
+.card2 {
+    background-image: url(/img/vocal.jpg);
+}
+.card3 {
+    background-image: url(/img/painting.jpg);
+}
+.card4 {
+    background-image: url(/img/music.jpg);
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+
+.card p {
+    text-shadow: 0 0 5px #999;
+    font-size: 8px;
+    padding-top: 30px;
+}
+
+footer {
+    background-color: #111;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer {
+    background-color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 1.8em;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer p {
+    max-width: 500px;
+    line-height: 28px;
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i {
+    color: #000;
+}
+
+.foot {
+    background-color: rgb(20, 22, 36);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+.foot p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.foot span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
